@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCampus Marketplace</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap">
+</head>
+<body style="font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333;">
+
+  <header style="background-color: #002147; color: white;">
+    <nav style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+      <div style="margin-right: auto;">
+        <a href="home.jsp"><img src="69.jpg" alt="logo" style="height: 50px;"></a>
+      </div>
+      <div style="margin: 0 15px;">
+        <a href="#" style="color: white; text-decoration: none;">Deliver to</a>
+        <div style="display: inline-flex; align-items: center;">
+          <span class="material-symbols-outlined" style="margin-right: 5px;">location_on</span>
+          <a href="#" style="color: white; text-decoration: none;">Your Location</a>
+        </div>
+      </div>
+
+      <div style="margin: 0 15px;">
+        <form action="search.jsp" method="GET" style="display: flex; align-items: center;">
+          <select name="category" style="padding: 5px; margin-right: 5px;">
+            <option value="All Categories">All Categories</option>
+            <option value="Books">Books</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Stationery">Stationery</option>
+          </select>
+          <input type="text" name="query" placeholder="Search products" required style="padding: 5px; margin-right: 5px;">
+          <button type="submit" style="background: none; border: none; cursor: pointer;">
+            <span class="material-symbols-outlined">search</span>
+          </button>
+        </form>
+      </div>
+
+      <div style="margin: 0 15px;">
+        <a href="login.jsp" style="color: white; text-decoration: none;">
+          <p style="margin: 0;">Hello, sign in</p><span>Account &amp; Lists</span>
+        </a>
+      </div>
+
+      <div style="margin: 0 15px;">
+        <a href="orders.jsp" style="color: white; text-decoration: none;">
+          <p style="margin: 0;">Returns</p><span>&amp; Orders</span>
+        </a>
+      </div>
+
+      <div style="margin: 0 15px;">
+        <a href="cart.jsp" style="color: white; text-decoration: none;">
+          <span class="material-symbols-outlined" style="font-size: 24px;">shopping_cart</span>
+        </a>
+        <p style="margin: 0;">Cart</p>
+      </div>
+    </nav>
+    
+    <div style="background-color: #004e7c; padding: 15px 20px;">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+          <button onclick="location.href='categories.jsp'" style="background: none; color: white; border: none; cursor: pointer;">
+            <span class="material-symbols-outlined">menu</span>All Categories
+          </button>
+        </div>
+
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex;">
+          <li style="margin-right: 20px;"><button onclick="location.href='deals.jsp'" style="background: none; color: white; border: none; cursor: pointer;">Today's Deals</button></li>
+          <li style="margin-right: 20px;"><button onclick="location.href='services.jsp'" style="background: none; color: white; border: none; cursor: pointer;">Student Services</button></li>
+          <li style="margin-right: 20px;"><button onclick="location.href='giftcards.jsp'" style="background: none; color: white; border: none; cursor: pointer;">Gift Cards</button></li>
+          <li><button onclick="location.href='sell.jsp'" style="background: none; color: white; border: none; cursor: pointer;">Sell Your Items</button></li>
+        </ul>
+        <div style="margin-left: 20px;">
+          <button onclick="location.href='studentdeals.jsp'" style="background-color: #f8d74a; color: black; padding: 5px 10px; border: none; border-radius: 4px; cursor: pointer;">Shop Deals for Students</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section style="text-align: center; padding: 20px;">
+    <h1>Welcome to SmartCampus Marketplace</h1>
+    <p>Your one-stop shop for all your college needs!</p>
+    
+  </section>
+
+  <section style="padding: 20px;">
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+      <div style="text-align: center; border: 1px solid #ddd; border-radius: 8px; margin: 10px; padding: 10px; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h3>Shop Books &amp; Study Materials</h3>
+        <img src="books.jpeg" alt="books" style="max-width: 150px; height: auto;">
+        <button onclick="location.href='books.jsp'" style="margin-top: 10px; padding: 10px 20px; background-color: #002147; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;">
+          Shop Now
+        </button>
+      </div>
+      <div style="text-align: center; border: 1px solid #ddd; border-radius: 8px; margin: 10px; padding: 10px; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h3>Shop Electronics</h3>
+        <img src="img-1.png" alt="electronics" style="max-width: 150px; height: auto;">
+        <button onclick="location.href='electronics.jsp'" style="margin-top: 10px; padding: 10px 20px; background-color: #002147; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;">
+          Shop Now
+        </button>
+      </div>
+      <div style="text-align: center; border: 1px solid #ddd; border-radius: 8px; margin: 10px; padding: 10px; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h3>Shop Stationery</h3>
+        <img src="download.jpeg" alt="stationery" style="max-width: 150px; height: auto;">
+        <button onclick="location.href='stationery.jsp'" style="margin-top: 10px; padding: 10px 20px; background-color: #002147; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;">
+          Shop Now
+        </button>
+      </div>
+      <div style="text-align: center; border: 1px solid #ddd; border-radius: 8px; margin: 10px; padding: 10px; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h3>Shop College Essentials</h3>
+        <img src="au.jpeg" alt="essentials" style="max-width: 150px; height: auto;">
+        <button onclick="location.href='essentials.jsp'" style="margin-top: 10px; padding: 10px 20px; background-color: #002147; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; transition: background-color 0.3s;">
+          Shop Now
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background-color: #002147; color: white; padding: 20px 0;">
+    <div style="text-align: center;">
+      <ul style="list-style: none; padding: 0;">
+        <li style="display: inline; margin: 0 15px;"><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+        <li style="display: inline; margin: 0 15px;"><a href="#" style="color: white; text-decoration: none;">Terms of Service</a></li>
+        <li style="display: inline; margin: 0 15px;"><a href="#" style="color: white; text-decoration: none;">Contact Us</a></li>
+      </ul>
+    </div>
+    <p style="text-align: center;">&copy; 2024 SmartCampus Marketplace. All rights reserved.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</body>
+</html>
