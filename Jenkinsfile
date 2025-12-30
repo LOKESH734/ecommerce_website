@@ -19,6 +19,7 @@ pipeline {
             }
             steps {
                 sh '''
+                cd frontend
                   node -v
                   npm install
                 '''
