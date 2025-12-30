@@ -1,30 +1,28 @@
-pipeline{
+pipeline {
     agent none
-    
-        stages
-        {
-            stage('checkout')
-            {
-                agent any
-                steps{
-                    checkout scm
+
+    stages {
+
+        stage('Checkout') {
+            agent any
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Build') {
+            agent {
+                docker {
+                    image 'node:18-alpine'
+                    reuseNode true
                 }
             }
-            stage('Build')
-            {
-                agent{
-                    docker{
-                        image 'node:18-alpine'
-                        reuseNode true
-                    }
-                }
-                steps{
-                    sh '''
-                    npm install
-                    node -v
-                
-                    '''
-                }
+            steps {
+                sh '''
+                  node -v
+                  npm install
+                '''
             }
         }
     }
+}
