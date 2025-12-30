@@ -13,7 +13,7 @@ pipeline{
             {
                 agent{
                     docker{
-                        image 'node:18 -apline'
+                        image 'node:18-apline'
                         reuseNode true
                     }
                 }
